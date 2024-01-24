@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    padding:  0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 0;
+    z-index: 999999999;
+    right: 0;
+    left: 0;
+    color: #fff;
+}
+.most-wahala{
+    display: flex;
+    justify-content: center;
+}
+.most-wahala>div{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-text{
+    border-right: 1px solid white;
+    border-left: 1px solid #fff;
+    padding: 0.5rem 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.roll{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1024px) {
+    .most-wahala>div{
+        background-color: black;
+        position: absolute;
+        top: 110%;
+        right: 2%;
+        flex-direction: column;
+    }.roll{
+        display: none;
+    }
+}

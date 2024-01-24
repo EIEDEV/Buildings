@@ -1,0 +1,113 @@
+#boast{
+    background-color: #f8f8f8;
+}
+
+.boast-upside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boast-numbers h3{
+    font-size: 5rem;
+}
+.boast-numbers p{
+    color: #6a4605;
+}
+
+.boast-downside{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem 0 0 0 ;
+}
+.downside-photo{
+    aspect-ratio: 1/0.7;
+    padding: 1rem;
+}
+
+.boad{
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+    padding-left: 2rem;
+    color: white;
+}
+.b{
+    background-color: #dcbe76;
+}
+
+.boad p{
+    width: 87%;
+    font-size: 1rem;
+}
+
+.boad .btn{
+    padding: 1rem  3rem;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+
+.boad .btn:hover{
+    color: black;
+    background-color: inherit;
+    border: 1px solid black;
+}
+
+.downside-photo.c{
+    z-index: 999999;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/proce.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../assets/Study desk.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    #boast {
+        font-size: 1rem;
+    }
+
+    .downside-photo{
+        aspect-ratio: 1/1.3;
+        padding: unset;
+    }
+    .boad{
+        padding: unset;
+        overflow: hidden;
+    }
+    .boad .btn{
+        padding: unset;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .boast-downside{
+        grid-template-columns: 1fr;
+    }
+    .downside-photo{
+        aspect-ratio: 1/0.7;
+    }
+    .boast-upside{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,121 @@
+.swiper-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.swiper-container .swiper{
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-slide{
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide img{
+    max-width: 100%;
+    max-height: fit-content;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+} 
+
+.swiper-button-prev, .swiper-button-next{
+    display: none ;
+}
+
+.swiper-container .custom-swiper-button-prev, .swiper-container .custom-swiper-button-next{
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    color: #fff ;
+}
+
+.swiper-container .custom-swiper-button-next{
+    right: 3%;
+    z-index: 999999999;
+}
+
+.swiper-container .custom-swiper-button-prev{
+    left: 3%;
+    z-index: 9999999999;
+}
+
+.custom-icon{
+    font-size: 30px;
+}
+
+.abs-header{
+    width: max-content;
+    z-index: 999999;
+    display: block;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 100;
+}
+
+.abs-header h2{
+    color: white;
+    letter-spacing: 20px;
+    font-size: 7rem;
+    font-weight: 300;
+}
+
+.abs-header p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 45%;
+    font-size: 2rem;
+}
+
+.abs-header div{
+    color: #fff;
+    padding: 1.5rem 3rem;
+    border-radius: 40px;
+    background: linear-gradient(to right, #705739, #e2b967);
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:1024px) {
+    .abs-header h2 {
+            font-size: 3.5rem;
+            letter-spacing: 4.1px;
+        }
+}
+
+@media screen and (max-width:600px) {
+    
+    .abs-header h2{
+        font-size: 2rem;letter-spacing: 4.1px;
+    }
+    .abs-header p{
+        width: 30%;
+        font-size: 1.5rem;
+    }
+    .swiper-container .custom-swiper-button-next {
+        right: 1%;
+        z-index: 999999999;
+    }
+
+    .swiper-container .custom-swiper-button-prev {
+        left:2%;
+        z-index: 9999999;
+    }
+
+}

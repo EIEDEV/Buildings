@@ -1,0 +1,79 @@
+#review-container{
+    background-color: #f8f8f8;
+    position: relative;
+
+}
+
+#review-container .swiper{
+    z-index: 9;
+    width: 80%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+#review-container .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.review-first-div{
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: white;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.review-second-div{
+    background-color: transparent;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+}
+
+.review-second-div img{
+    width: 4.6rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.review-second-div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.review-second-div>div h5{
+    font-weight: 900;
+}
+
+.review-second-div::before{
+    content: "";
+    width: 1.5rem;
+    aspect-ratio: 1/1.1;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, #d5af64 50%, transparent 50%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    z-index: 99999;
+}
+
+
+.swiper-button-next {
+    right: 0rem;
+}
+
+.swiper-button-prev{
+    left: 0rem;
+    z-index: 99999;
+}
